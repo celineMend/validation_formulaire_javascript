@@ -12,12 +12,19 @@ body {
     margin-top: 5px;
 }
 
+h1{
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 700px;
+    margin: 0 auto; /* Centre le conteneur horizontalement */
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: white;
+
 }
 
 .form-and-image {
@@ -32,7 +39,9 @@ form, .image-container {
 }
 
 form {
-    max-width: 400px;
+    max-width: 600px; 
+    margin: 0 auto; 
+
 }
 
 .image-container img {
@@ -45,16 +54,24 @@ label, input, button {
     display: block;
     width: 100%;
     margin-bottom: 10px;
+    box-sizing: border-box; 
+    padding: 10px;
+     
+    border-radius: 5px; 
+}
+input {
+    border: 1px solid #b40000;
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #b40000;
     color: white;
     border: none;
-    padding: 10px;
     cursor: pointer;
+    padding: 10px;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #800000;
+
 }
