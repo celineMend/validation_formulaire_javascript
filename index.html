@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Soumission</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-and-image">
+            <form id="submissionForm">
+                <label for="prenom">Prénom:</label>
+                <input type="text" id="prenom" name="prenom" required>
+                <span id="prenomError" class="error"></span>
+
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required>
+                <span id="nomError" class="error"></span>
+
+                <label for="email">Adresse Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span id="emailError" class="error"></span>
+
+                <label for="password">Mot de Passe:</label>
+                <input type="password" id="password" name="password" required>
+                <span id="passwordError" class="error"></span>
+
+                <button type="submit">Soumettre</button>
+            </form>
+            <div class="image-container">
+                <img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fleclaireur.fnac.com%2Fwp-content%2Fuploads%2F2021%2F12%2Fshutterstock-1454572289-1256x826.jpg&sp=1720614287T6c43ca9d7a4ff8c362f4a2e4a00348773fcd7480e16a7dc557b78f21ec2d940d" alt="Form Image">
+            </div>
+        </div>
+        <div id="successMessage" class="hidden">Succès! Le formulaire a été soumis.</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
